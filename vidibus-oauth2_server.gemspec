@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = 'vidibus-oauth2_server'
 
   s.add_dependency 'rails', '~> 3'
-  s.add_dependency 'mongoid', '~> 3'
+  s.add_dependency 'mongoid', '>= 3'
   s.add_dependency 'vidibus-core_extensions'
   s.add_dependency 'vidibus-uuid'
   s.add_dependency 'vidibus-validate_uri'
