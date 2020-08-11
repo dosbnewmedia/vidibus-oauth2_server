@@ -50,7 +50,7 @@ class Oauth2::AuthenticationController < Oauth2Controller
     redirect_url = params[:redirect_url]
     raise Vidibus::Oauth2Server::MissingRedirectUrlError if redirect_url.blank?
     raise Vidibus::Oauth2Server::MalformedRedirectUrlError unless valid_uri?(redirect_url)
-    unless redirect_url.match(/^https?:\/\/([a-z0-9]+\.)?#{@oauth2_client.domain}/) # allow subdomains but ensure host of client application
+    unless redirect_url.match(/^https?:\/\/([a-z0-9]+[\.-]{1})?#{@oauth2_client.domain}/) # allow subdomains but ensure host of client application
       raise Vidibus::Oauth2Server::InvalidRedirectUrlError
     end
   end

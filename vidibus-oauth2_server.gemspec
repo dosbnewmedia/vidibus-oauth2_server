@@ -18,13 +18,13 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = '>= 1.3.6'
   s.rubyforge_project         = 'vidibus-oauth2_server'
 
-  s.add_dependency 'rails', '~> 3'
+  s.add_dependency 'rails', '~> 3.2'
   s.add_dependency 'mongoid', '>= 3'
   s.add_dependency 'vidibus-core_extensions'
   s.add_dependency 'vidibus-uuid'
   s.add_dependency 'vidibus-validate_uri'
 
-  s.add_development_dependency 'bundler', '>= 1.0.0'
+  s.add_development_dependency 'bundler'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rdoc'
   s.add_development_dependency 'rspec', '~> 2'
